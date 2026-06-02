@@ -79,7 +79,7 @@ Robot akan mengikuti dinding menggunakan sensor ultrasonik.
 
 ## 📄 Lisensi
 
-Project ini dibuat untuk keperluan **praktikum robotika**. Silakan gunakan dan modifikasi sesuai kebutuhan pembelajaran.
+Project ini dibuat untuk keperluan **Abdimas Robot PSMURO**. Silakan gunakan dan modifikasi sesuai kebutuhan pembelajaran.
 
 ---
 
