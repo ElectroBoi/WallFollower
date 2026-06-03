@@ -69,24 +69,25 @@ void loop() {
     rightSpeed = defRSpeed;
   }
 
-  //Logika Left Wall Hugging
+  //Logika Right Wall Hugging
   if(distanceF < MaxFront){
-    //Belok ke Kanan apabila depan Robot terdapat tembok
     if (distanceR > MaxFront){
+    //Belok ke Kanan apabila depan Robot terdapat tembok dan sensor R tidak terdapat tembok
       motorControl(1,0,0,0, defLSpeed, defRSpeed);
     }else {
+    //Belok ke Kanan apabila depan Robot terdapat tembok dan sensor R terdapat tembok
       motorControl(0,0,1,0, defLSpeed, defRSpeed);
     }
   }
 
   //Ganti variable distanceL ke variable distanceR apabila menggunakan logkia Right Wall Hugging
   else if (distanceR > sideDistance + 2){
-    //Belok ke kiri untuk mendekati tembok kiri apabila jarak robot terlalu jajuh dari tembok  
+    //Belok ke Kanan untuk mendekati tembok Kanan apabila jarak robot terlalu jajuh dari tembok  
     motorControl(1,0,0,0, leftSpeed, rightSpeed);
   }
 
   else if (distanceR < sideDistance - 2){
-    //Belok ke Kanan apabila jarak robot terlalu dekat dengan tembok untuk menjauh
+    //Belok ke Kiri apabila jarak robot terlalu dekat dengan tembok untuk menjauh
     motorControl(0,0,1,0, leftSpeed, rightSpeed);
   }
  
